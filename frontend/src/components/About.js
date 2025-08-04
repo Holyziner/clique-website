@@ -67,18 +67,21 @@ const About = () => {
             </div>
           </div>
 
-          {/* Right Column - Image Placeholder */}
+          {/* Right Column - Professional Image */}
           <div className="relative">
-            {/* This will be replaced with actual image from vision_expert_agent */}
-            <div className="aspect-square bg-white rounded-2xl shadow-xl border border-gray-200 flex items-center justify-center overflow-hidden">
-              <div className="text-center text-clique-charcoal-600 p-8">
-                <div className="w-32 h-32 bg-clique-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Globe className="w-16 h-16 text-clique-teal-500" />
+            <div className="aspect-square bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjBidXNpbmVzc3xlbnwwfHx8fDE3NTQzMDMxMzN8MA&ixlib=rb-4.1.0&q=85"
+                alt="Global connectivity - Earth from space showing international trade networks"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-clique-teal-900/50 to-transparent flex items-end p-6">
+                <div className="text-white">
+                  <h4 className="text-lg font-semibold mb-1">Global Connection</h4>
+                  <p className="text-sm opacity-90">
+                    Bridging continents through trusted partnerships and local expertise
+                  </p>
                 </div>
-                <h4 className="text-xl font-semibold mb-2">Global Connection</h4>
-                <p className="text-clique-charcoal-500">
-                  Bridging continents through trusted partnerships and local expertise
-                </p>
               </div>
             </div>
 
