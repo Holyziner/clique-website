@@ -95,11 +95,13 @@ async def get_quotes(skip: int = 0, limit: int = 50):
         raise HTTPException(status_code=500, detail=f"Database error: {str(e)}")
 
 # Contact messages
+contact_collection = database.contact_messages
+
 @app.post("/api/contact", status_code=status.HTTP_201_CREATED)
 async def submit_contact_message(message: ContactMessage):
     try:
         message_dict = message.dict()
-        result = await quotes_collection.insert_one(message_dict)
+        result = await contact_collection.insert_one(message_dict)
         if result.inserted_id:
             return {"message": "Contact message sent successfully", "id": message.id}
         else:
