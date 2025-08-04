@@ -108,16 +108,19 @@ const Hero = () => {
           }`}>
             {/* Placeholder for hero image - will be replaced with actual image */}
             <div className="relative">
-              <div className="aspect-square lg:aspect-[4/3] bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 flex items-center justify-center overflow-hidden">
-                {/* This will be replaced with actual image from vision_expert_agent */}
-                <div className="text-center text-white p-8">
-                  <div className="w-24 h-24 bg-clique-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Play className="w-8 h-8 text-white" />
+              {/* Professional hero image showing international business partnership */}
+              <div className="aspect-square lg:aspect-[4/3] bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGhhbmRzaGFrZXxlbnwwfHx8fDE3NTQzMDMwMzR8MA&ixlib=rb-4.1.0&q=85"
+                  alt="International business partnership - African and Chinese entrepreneurs shaking hands"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent flex items-end p-6">
+                  <div className="text-white">
+                    <p className="text-sm font-medium opacity-90">
+                      Building trusted partnerships across continents
+                    </p>
                   </div>
-                  <p className="text-lg font-semibold">International Trade Connection</p>
-                  <p className="text-sm text-clique-teal-100 mt-2">
-                    African entrepreneurs connecting with Chinese factories
-                  </p>
                 </div>
               </div>
 
